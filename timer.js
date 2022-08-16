@@ -43,6 +43,9 @@ function UpdateTimerDisplay() {
 
 // add a listener to the start button that starts the timer
 startButton.addEventListener("click", function () {
+  
+  resetButton.click();
+  
   timerInterval = setInterval(function () {
     timerSeconds--;
     if (timerSeconds < 0) {
@@ -81,7 +84,4 @@ resetButton.addEventListener("click", function () {
   timerMinutes = timerInputMinutes.value;
   timerSeconds = timerInputSeconds.value;
   UpdateTimerDisplay();
-
-  // Restart the timer
-  startButton.click();
 });
