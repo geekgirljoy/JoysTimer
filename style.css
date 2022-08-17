@@ -70,3 +70,16 @@ body {
     overflow: hidden;
     background-color: #f1f1f1;
 }
+
+
+.arrow {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid white;
+}
+
+.pull-right {
+    float: right;
+}
